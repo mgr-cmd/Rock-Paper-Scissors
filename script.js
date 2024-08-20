@@ -104,20 +104,21 @@ function playGame(){
             alert(`User Score = ${userScore}` + " |" + `ComputerSore= ${computerScore}` ) ; 
             
             alert("DeciderMatch"); 
-           ( ()=>{
+           
                 //one more round Decider
                 playRound(getComputerChoice(),getHumanChoice()) ; 
                 if(userScore > computerScore ) {
                     alert(`User Score = ${userScore}` + " |" + `ComputerSore= ${computerScore}` ) ; 
                     alert("WINNER WINNER CHICKEN DINNER"); 
 
-                }   else{
+                }
+                else { 
                         alert(`User Score = ${userScore}` + "|" + `ComputerSore= ${computerScore}` ) ; 
             
                         alert ("NO CHICKEN DINNER"); 
-                    }
+                }
 
-            });
+
 
         }else if(userScore > computerScore ) {
             alert(`User Score = ${userScore}` + " |" + `ComputerSore= ${computerScore}` ) ; 
@@ -136,6 +137,8 @@ let game = prompt("would you like to play a game ? ") ;
 if(game != null) {
     playGame() ; 
 
-}else{
+}
+else {
+
     alert("Reload to play ") ; 
 }
