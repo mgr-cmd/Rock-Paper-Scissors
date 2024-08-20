@@ -43,7 +43,7 @@ function playGame(){
 
             if (computerChoice===humanChoice) {
 
-                    alert(`Draw : ${humanChoice} ${computerChoice} `) ; 
+                    console.log(`Draw : ${humanChoice} ${computerChoice} `) ; 
 
             }else if (computerChoice==='rock' && humanChoice==='scissors' ){
                    
@@ -96,6 +96,7 @@ function playGame(){
         }
 
         alert(`Game oVer`) ; 
+
         //Declaring the winner 
         // if draw 
         if(userScore==computerScore){
@@ -117,8 +118,6 @@ function playGame(){
             
                         alert ("NO CHICKEN DINNER"); 
                 }
-
-
 
         }else if(userScore > computerScore ) {
             alert(`User Score = ${userScore}` + " |" + `ComputerSore= ${computerScore}` ) ; 
